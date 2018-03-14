@@ -820,7 +820,7 @@ public abstract class TP extends Protocol implements DiagnosticsHandler.ProbeHan
 
         if(thread_factory == null)
             //thread_factory=new DefaultThreadFactory("jgroups", false, true);
-          thread_factory=new LazyThreadFactory("jgroups", false, true);
+          thread_factory=new LazyThreadFactory("jgroups", true, true);
 
         if(internal_thread_factory == null)
             internal_thread_factory=new LazyThreadFactory("jgroups-int", false, true);
